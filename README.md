@@ -1,8 +1,7 @@
 # Arch Linux Installation
 
 1) First set boot to UEFI
-
-![arch-linux-install-live-usb.png](/home/amir/Documents/arch-linux-installation/01.png)
+   ![UEFI](./01.png "UEFI")
 
 we can verify the boot using the following command
 
@@ -64,7 +63,7 @@ Imagine that the partition we want to create on `/dev/sda`
 cfdisk /dev/sda
 ```
 
-![02-label-type.jpg](/home/amir/Documents/arch-linux-installation/02.jpg)
+![Cfdisk](./02.jpg "cfdisk")
 
 we use GPT for UEFI boot .
 
@@ -74,7 +73,7 @@ Now we want 3 partitions
 - `/dev/sda2`  # choose 2GB to 4GB for Swap (Swap)
 - `/dev/sda3`   # choose at least 10 GB of space (root)
 
-![Screenshot from 2023-08-30 20-47-02.png](/home/amir/Documents/arch-linux-installation/03.png)
+![Partition](./03.png)
 
 The first partition is the UEFI partition. It needs to be formatted with a FAT file system:
 
@@ -210,7 +209,7 @@ vim /etc/locale.gen
 
 Uncomnent “*`en_US.UTF-8 UTF-8`*” and “*`en_US ISO-8859-1`*” (by removing the “*#*” sign), and any other needed locales in “*`/etc/locale.gen`*.” Then, press “*Ctrl+O*” followed by “*Enter*” to save, and finally, “*Ctrl+X*” to exit the editor.
 
-![arch-linux-install-locale.png](/home/amir/Documents/arch-linux-installation/04.png)
+![locale.gen](./04.png "locale.gen")
 
 vim /etc/hosts
 
