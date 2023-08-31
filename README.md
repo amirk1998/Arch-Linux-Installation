@@ -1,6 +1,7 @@
 # Arch Linux Installation as a Virtual Machine
 
 1) First set boot to UEFI
+   
    ![UEFI](./01.png "UEFI")
 
 we can verify the boot using the following command
