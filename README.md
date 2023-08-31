@@ -1,4 +1,4 @@
-# Arch Linux Installation
+# Arch Linux Installation as a Virtual Machine
 
 1) First set boot to UEFI
    ![UEFI](./01.png "UEFI")
